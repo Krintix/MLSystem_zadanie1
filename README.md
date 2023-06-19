@@ -49,5 +49,5 @@ mvn clean package
 Oparty na frameworku Spring-Boot
 
 ```bash
-mvnw clean package
+mvn clean package
 ```
