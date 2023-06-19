@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "guard"
+		},
+		{
+			"path": "toggler"
+		},
+		{
+			"path": "shared"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive",
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}
