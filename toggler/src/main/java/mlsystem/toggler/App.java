@@ -47,7 +47,7 @@ public class App {
             logger.error("Cannot start SNMP Interface("+e.getMessage()+")");
             e.printStackTrace();
         }
-        //gpioToggler.Start(); // Can't test
+        gpioToggler.Start();
         try {
             modbusServer.Listen();
         } catch (IOException e) {
