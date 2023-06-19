@@ -19,6 +19,8 @@ import org.snmp4j.smi.VariableBinding;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.pi4j.provider.exception.ProviderException;
+
 import de.re.easymodbus.server.ModbusServer;
 import mlsystem.shared.SnmpInterface;
 import mlsystem.shared.action.SNMPAction;
