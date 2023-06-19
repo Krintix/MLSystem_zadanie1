@@ -1,0 +1,16 @@
+[Unit]
+Description=Toggler
+After=sysinit.target
+
+[Service]
+SuccessExitStatus=143
+
+Type=forking
+
+User=krintix
+Group=krintix
+ExecStart=/Programy/Services/toggler/toggler.sh
+ExecStop=/bin/kill -15 $MAINPID
+
+[Install]
+WantedBy=multi-user.target
