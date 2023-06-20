@@ -1,6 +1,7 @@
 package mlsystem.toggler;
 
 import java.io.IOException;
+import java.security.ProviderException;
 import java.time.Duration;
 
 import org.apache.logging.log4j.Logger;
@@ -28,7 +29,7 @@ public class GPIOToggler extends ActionWorker {
     }
 
     @Override
-    public void Start() {
+    public void Start() throws ProviderException {
         pi4j = Pi4J.newAutoContext();
         toggler = pi4j.dout().create(PIN_TO_TOGGLE);
         toggler.config().shutdownState(DigitalState.LOW);

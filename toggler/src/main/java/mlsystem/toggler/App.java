@@ -3,6 +3,7 @@ package mlsystem.toggler;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.security.ProviderException;
 import java.text.ParseException;
 import java.time.Duration;
 import java.util.Properties;
@@ -18,8 +19,6 @@ import org.snmp4j.smi.UdpAddress;
 import org.snmp4j.smi.VariableBinding;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.pi4j.provider.exception.ProviderException;
 
 import de.re.easymodbus.server.ModbusServer;
 import mlsystem.shared.SnmpInterface;
@@ -41,6 +40,7 @@ public class App {
         } catch (IOException | ParseException e) {
             logger.fatal("Cannot start("+e.getMessage()+")");
             e.printStackTrace();
+            return;
         }
 
         try {

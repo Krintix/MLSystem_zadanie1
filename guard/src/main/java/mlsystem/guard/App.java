@@ -36,6 +36,7 @@ public class App
         } catch (IOException | ParseException e) {
             logger.fatal("Cannot start("+e.getMessage()+")");
             e.printStackTrace();
+            return;
         }
 
         try {

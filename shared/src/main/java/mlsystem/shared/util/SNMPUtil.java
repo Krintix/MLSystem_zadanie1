@@ -63,7 +63,8 @@ public class SNMPUtil {
             if(vb.contains("~"))
             {
                 OID oid = new OID(vb.substring(0,vb.indexOf("~")));
-                vbs.add(new VariableBinding(oid, vb.substring(vb.indexOf("~")+1)));
+                String variableText = vb.substring(vb.indexOf("~")+1);
+                vbs.add(new VariableBinding(oid, new OctetString(variableText)));
             }
             else
             {
