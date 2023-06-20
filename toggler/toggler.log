@@ -1,5 +1,0 @@
-2023-06-20 15:12:53 INFO  Could not detect default configuration classes for test class [mlsystem.toggler.TogglerApplicationTests]: TogglerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-06-20 15:12:53 INFO  Found @SpringBootConfiguration mlsystem.toggler.App for test class mlsystem.toggler.TogglerApplicationTests
-2023-06-20 15:12:54 INFO  Starting TogglerApplicationTests using Java 17.0.7 with PID 1224 (started by krintix in /Programy/Java/MLSystem/toggler)
-2023-06-20 15:12:54 INFO  No active profile set, falling back to 1 default profile: "default"
-2023-06-20 15:12:55 INFO  Started TogglerApplicationTests in 1.437 seconds (process running for 2.959)
