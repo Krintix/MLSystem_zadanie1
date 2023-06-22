@@ -1,10 +1,13 @@
 # MLSystem Zadanie 1
 
-W folderze **[Finished Services](FinishedServices/)** znajduję się ukończone zadanie wraz z plikami **.service**.
+W folderze **[Finished Services](FinishedServices/)** znajduję się ukończone zadanie.</br>
+**[Services](FinishedServices/services)** zawiera skompilowane plik oraz skrypty bash do uruchomienia.</br>
+**[Systemd](FinishedServices/systemd)** zawiera pliki z usługami.</br>
+By wszystko działało w plikach **[guard.service](FinishedServices/systemd/guard.service)** i **[toggler.service](FinishedServices/systemd/toggler.service)** dla argumentu **ExecStart** trzeba podać ścieżki do **[guard.sh](FinishedServices/services/guard/guard.sh)** i **[toggler.sh](FinishedServices/services/toggler/toggler.sh)**</br>
 
 ## Usługi
 
-Usługi zostały wykonane dla funkcji **Systemd**</br>
+Usługi zostały wykonane dla funkcji **Systemd**.</br>
 Były one zarejestrowane pod **/etc/systemd/system**</br>
 Komendy użyte do testowania:
 
@@ -42,7 +45,7 @@ Skompilowane w Maven'ie jako fat jar. Biblioteka **[Easy Modbus](EasyModbusJava.
 
 ### Easy Modbus
 
-Komenda do instalacji w lokalnym repozytorium
+Komenda do instalacji w lokalnym repozytorium:
 
 ```bash
 mvn install:install-file -Dfile=<scieżka_do_pliku> -DgroupId=modbus -DartifactId=easymodbus -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
@@ -62,7 +65,7 @@ mvn clean package
 
 ### Toggler
 
-Oparty na frameworku Spring-Boot
+Oparty na frameworku Spring-Boot.
 
 ```bash
 mvnw clean package

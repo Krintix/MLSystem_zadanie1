@@ -1,0 +1,14 @@
+[Unit]
+Description=Toggler
+After=sysinit.target
+
+[Service]
+SuccessExitStatus=143
+
+Type=forking
+
+ExecStart=/MLSystem/FinishedServices/services/toggler/toggler.sh
+ExecStop=/bin/kill -15 $MAINPID
+
+[Install]
+WantedBy=multi-user.target

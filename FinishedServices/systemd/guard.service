@@ -1,0 +1,14 @@
+[Unit]
+Description=Guard
+After=sysinit.target
+
+[Service]
+SuccessExitStatus=143
+
+Type=forking
+
+ExecStart=/MLSystem/FinishedServices/services/guard/guard.sh
+ExecStop=/bin/kill -15 $MAINPID
+
+[Install]
+WantedBy=multi-user.target
